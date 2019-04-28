@@ -1,5 +1,5 @@
 home() {
-	git --work-tree=$HOME --git-dir=$HOME/.files.git $@
+	git --work-tree=$HOME --git-dir=$HOME/.files.git $@ || exit 1
 }
 home init
 home remote add origin https://github.com/kvinwang/dotfiles.git
